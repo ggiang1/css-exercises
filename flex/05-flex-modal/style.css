@@ -20,6 +20,14 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+
+  /* Uncomment this if you want the ! icon above text   */
+  /* flex-direction: column;  */
+
+  gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +41,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  /* By being 0, it says, do not shrink this item at all*/
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -66,4 +77,18 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  /* This being a flex item aligns the X button and header into one line!*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
 }
