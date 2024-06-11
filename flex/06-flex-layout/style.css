@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  /* Alternate solution: Keep uncomment below and comment out flex: 1; in content */
+  justify-content: space-between; 
 }
 
 img {
@@ -23,4 +28,59 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex: 1; */
+
+  /* Can uncomment this and comment the line below */
+  gap: 16px;
+}
+
+/* .buttons {
+  padding: 16px;
+} */
+
+.buttons button {
+  /* padding: 8px; */
+  padding: 8px 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  background-color: #eee;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left-links {
+  list-style-type: none;
+
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  margin: 8px;
+
+}
+
+.right-links {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  margin: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
